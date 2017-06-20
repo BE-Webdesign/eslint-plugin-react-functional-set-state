@@ -4,7 +4,7 @@
   "description": "Lint rule for React, should use functional setState",
   "repository": {
     "type": "git",
-    "url": "https://github.com/npm/npm.git"
+    "url": "https://github.com/BE-Webdesign/eslint-plugin-react-functional-set-state.git"
   },
   "keywords": [
     "eslint",
