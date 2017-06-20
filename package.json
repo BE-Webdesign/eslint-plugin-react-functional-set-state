@@ -2,6 +2,10 @@
   "name": "eslint-plugin-react-functional-set-state",
   "version": "1.0.0",
   "description": "Lint rule for React, should use functional setState",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/npm/npm.git"
+  },
   "keywords": [
     "eslint",
     "eslintplugin",
