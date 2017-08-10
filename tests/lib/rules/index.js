@@ -32,6 +32,10 @@ ruleTester.run("no-this-state-props", rule, {
             parserOptions: { ecmaVersion: 6 }
         },
         {
+            code: "this.setState( ( state, props ) => ( { opened: ! props.open } ), () => ( { state: this.state } ) )",
+            parserOptions: { ecmaVersion: 6 }
+        },
+        {
             code: "var yolo = this.state.yolo; this.setState( ( state, props ) => ( { opened: ! props.open } ) )",
             parserOptions: { ecmaVersion: 6 }
         },
