@@ -14,13 +14,18 @@
   "author": "Edwin Cromley",
   "main": "lib/index.js",
   "scripts": {
-    "test": "mocha tests --recursive"
+    "lint": "eslint ./",
+    "lint:fix": "eslint ./ --fix",
+    "test": "npm run lint && npm run unit-test",
+    "unit-test": "istanbul cover --dir reports/coverage node_modules/mocha/bin/_mocha tests/**/*.js -- --reporter dot"
   },
   "dependencies": {
     "requireindex": "~1.1.0"
   },
   "devDependencies": {
+    "babel-eslint": "^7.2.3",
     "eslint": "^3.9.1",
+    "istanbul": "0.4.5",
     "mocha": "^3.1.2"
   },
   "engines": {
